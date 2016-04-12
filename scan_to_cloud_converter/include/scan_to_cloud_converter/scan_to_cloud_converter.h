@@ -54,6 +54,9 @@ class ScanToCloudConverter
 
     PointT invalid_point_;
 
+    double min_range_;
+    double max_range_;
+
     void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan_msg);
  
  public:
