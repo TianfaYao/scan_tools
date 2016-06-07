@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="pointcloud_converter" type="pointcloud_converter" name="pointcloud_converter" >
+	<param name="pointcloud_to_pointcloud2" value="true" />
+	<remap from="~pointcloud" to="/pointcloud" />
+	<remap from="~pointcloud2" to="/velodyne_points" />
+	</node> 
+
+</launch>
